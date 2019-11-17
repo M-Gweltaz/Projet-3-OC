@@ -7,7 +7,7 @@ to animate a website with the help of Css animation.
 
 This was done under the supervision of an **OpenClassrooms** awesome tutor while doing the **Prép'Web** crash course.
 
-This static web page is made to be responsive in order to be nice on every of yours devices :sparkles:
+This web page is made to be responsive in order to be nice on every of yours devices :sparkles:
 
 I hope you enjoy it ! 
 
