@@ -1,0 +1,442 @@
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.menupages {
+  grid-column: 2/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+//page1//
+
+.menupage1 {
+  background-color: map-get($colors, menu1);
+  @include shadow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive, sans-serif;
+  margin-bottom: 20vh;
+
+  .menuitem {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+    p {
+      line-height: 220%;
+    }
+  }
+
+  p {
+    line-height: 220%;
+  }
+
+  img {
+    width: 15vh;
+    height: 10vh;
+    margin: 30px auto;
+  }
+
+  h2 {
+    margin: 20px auto;
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+  }
+
+  h3 {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      content: " ";
+      clip-path: polygon(49% 31%, 93% 17%, 100% 43%, 95% 86%, 70% 76%, 32% 85%, 6% 78%, 5% 23%, 17% 12%);
+      border-radius: 5%;
+      width: 25vh;
+      height: 1vh;
+      background-color: black;
+      margin: 1.75vh 4vh 0vh 0vh;
+      display: inline-block;
+    }
+
+    &::after {
+      content: " ";
+      clip-path: polygon(49% 31%, 93% 17%, 100% 43%, 95% 86%, 70% 76%, 32% 85%, 6% 78%, 5% 23%, 17% 12%);
+      border-radius: 5%;
+      width: 25vh;
+      height: 1vh;
+      background-color: black;
+      margin: 1.75vh 0vh 0vh 4vh;
+      display: inline-block;
+    }
+  }
+
+  .menu1lastp {
+    width: 80%;
+  }
+
+  .menupageend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vh;
+
+  }
+}
+
+//page2//
+
+.menupage2 {
+  background-color: map-get($colors, menu2);
+  @include shadow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Upright', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 20vh;
+  padding-bottom: 10vh;
+
+  .menuitem {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+    p {
+      line-height: 220%;
+    }
+  }
+
+  p {
+    line-height: 220%;
+  }
+
+  h2 {
+    margin: 10vh auto;
+    font-weight: bold;
+    background-image: linear-gradient(to right, map-get($colors, menu2p), map-get($colors, menu2s), map-get($colors, menu2t));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 2.2em;
+    font-size: 3em;
+  }
+
+}
+
+p.page2color3 {
+  width: 80%;
+}
+
+.page2color1 {
+  color: map-get($colors, menu2p);
+}
+
+.page2color1style1 {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  color: map-get($colors, menu2p);
+  text-align: center;
+
+  &::before {
+    content: " ";
+    clip-path: polygon(90% 20%, 94% 32%, 100% 47%, 94% 60%, 90% 75%, 86% 100%, 69% 70%, 1% 53%, 69% 29%, 85% 1%);
+    border-radius: 5%;
+    width: 25vh;
+    height: 1vh;
+    background-color: map-get($colors, menu2p);
+    margin: 1.75vh 4vh 0vh 0vh;
+    display: inline-block;
+  }
+
+  &::after {
+    content: " ";
+    clip-path: polygon(90% 20%, 94% 32%, 100% 47%, 94% 60%, 90% 75%, 86% 100%, 69% 70%, 1% 53%, 69% 29%, 85% 1%);
+    transform: rotate(180deg);
+    border-radius: 5%;
+    width: 25vh;
+    height: 1vh;
+    background-color: map-get($colors, menu2p);
+    margin: 1.75vh 0vh 0vh 4vh;
+    display: inline-block;
+  }
+}
+
+
+.page2color2 {
+  color: map-get($colors, menu2s);
+}
+
+.page2color1style2 {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  color: map-get($colors, menu2s);
+  text-align: center;
+
+  &::before {
+    content: " ";
+    clip-path: polygon(90% 20%, 94% 32%, 100% 47%, 94% 60%, 90% 75%, 86% 100%, 69% 70%, 1% 53%, 69% 29%, 85% 1%);
+    border-radius: 5%;
+    width: 25vh;
+    height: 1vh;
+    background-color: map-get($colors, menu2s);
+    margin: 1.75vh 4vh 0vh 0vh;
+    display: inline-block;
+  }
+
+  &::after {
+    content: " ";
+    clip-path: polygon(90% 20%, 94% 32%, 100% 47%, 94% 60%, 90% 75%, 86% 100%, 69% 70%, 1% 53%, 69% 29%, 85% 1%);
+    transform: rotate(180deg);
+    border-radius: 5%;
+    width: 25vh;
+    height: 1vh;
+    background-color: map-get($colors, menu2s);
+    margin: 1.75vh 0vh 0vh 4vh;
+    display: inline-block;
+  }
+}
+
+.page2color3 {
+  color: map-get($colors, menu2t);
+}
+
+.page2color1style3 {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  color: map-get($colors, menu2t);
+  text-align: center;
+
+  &::before {
+    content: " ";
+    clip-path: polygon(90% 20%, 94% 32%, 100% 47%, 94% 60%, 90% 75%, 86% 100%, 69% 70%, 1% 53%, 69% 29%, 85% 1%);
+    border-radius: 5%;
+    width: 25vh;
+    height: 1vh;
+    background-color: map-get($colors, menu2t);
+    margin: 1.75vh 4vh 0vh 0vh;
+    display: inline-block;
+  }
+
+  &::after {
+    content: " ";
+    clip-path: polygon(90% 20%, 94% 32%, 100% 47%, 94% 60%, 90% 75%, 86% 100%, 69% 70%, 1% 53%, 69% 29%, 85% 1%);
+    transform: rotate(180deg);
+    border-radius: 5%;
+    width: 25vh;
+    height: 1vh;
+    background-color: map-get($colors, menu2t);
+    margin: 1.75vh 0vh 0vh 4vh;
+    display: inline-block;
+  }
+}
+
+//page 3//
+
+.menupage3 {
+  background-color: map-get($colors, menu3);
+  @include shadow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  margin-bottom: 20vh;
+  padding-bottom: 10vh;
+  font-family: 'comic sans ms';
+  font-style: italic;
+
+  .menuitem {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+    p {
+      line-height: 220%;
+    }
+  }
+
+  p {
+    line-height: 220%;
+  }
+
+  h2 {
+    margin: 10vh auto;
+    background-image: linear-gradient(to right, map-get($colors, menu3p), map-get($colors, menu3s));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-family: 'Great Vibes', cursive;
+    line-height: 2.2em;
+    font-size: 3em;
+  }
+}
+
+.page3color1style1 {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  &::before {
+    content: " ";
+    clip-path: polygon(8% 39%, 15% 40%, 96% 38%, 100% 68%, 17% 68%, 7% 64%, 3% 54%, 1% 25%);
+    border-radius: 5%;
+    width: 25vh;
+    height: 2vh;
+    background-color: map-get($colors, menu3p);
+    margin: 1.75vh 4vh 0vh 0vh;
+    display: inline-block;
+  }
+
+  &::after {
+    content: " ";
+    clip-path: polygon(89% 44%, 97% 28%, 96% 52%, 93% 64%, 85% 69%, 0 71%, 4% 43%);
+    border-radius: 5%;
+    width: 25vh;
+    height: 2vh;
+    background-color: map-get($colors, menu3p);
+    margin: 1.75vh 0vh 0vh 4vh;
+    display: inline-block;
+  }
+}
+
+.page3color1style2 {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+
+  &::before {
+    content: " ";
+    clip-path: polygon(8% 39%, 15% 40%, 96% 38%, 100% 68%, 17% 68%, 7% 64%, 3% 54%, 1% 25%);
+    border-radius: 5%;
+    width: 25vh;
+    height: 2vh;
+    background-color: lighten(map-get($colors, menu3p), 20%);
+    margin: 1.75vh 4vh 0vh 0vh;
+    display: inline-block;
+  }
+
+  &::after {
+    content: " ";
+    clip-path: polygon(89% 44%, 97% 28%, 96% 52%, 93% 64%, 85% 69%, 0 71%, 4% 43%);
+    border-radius: 5%;
+    width: 25vh;
+    height: 2vh;
+    background-color: lighten(map-get($colors, menu3p), 20%);
+    margin: 1.75vh 0vh 0vh 4vh;
+    display: inline-block;
+  }
+}
+
+.page3color1style3 {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  &::before {
+    content: " ";
+    clip-path: polygon(8% 39%, 15% 40%, 96% 38%, 100% 68%, 17% 68%, 7% 64%, 3% 54%, 1% 25%);
+    border-radius: 5%;
+    width: 25vh;
+    height: 2vh;
+    background-color: map-get($colors, menu3s);
+    margin: 1.75vh 4vh 0vh 0vh;
+    display: inline-block;
+  }
+
+  &::after {
+    content: " ";
+    clip-path: polygon(89% 44%, 97% 28%, 96% 52%, 93% 64%, 85% 69%, 0 71%, 4% 43%);
+    border-radius: 5%;
+    width: 25vh;
+    height: 2vh;
+    background-color: map-get($colors, menu3s);
+    margin: 1.75vh 0vh 0vh 4vh;
+    display: inline-block;
+  }
+}
+
+
+//page4//
+
+
+.menupage4 {
+  @include shadow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive, sans-serif;
+  padding-bottom: 10vh;
+  margin-bottom: 20vh;
+
+  .menuitem {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    font-family: 'comic sans ms';
+    font-style: italic;
+
+    p {
+      line-height: 220%;
+    }
+  }
+
+  h2 {
+    margin: 10vh auto;
+    background-image: linear-gradient(to right, map-get($colors, menu4p), map-get($colors, menu4s));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 2.2em;
+  }
+
+  h3 {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      content: " ";
+      clip-path: polygon(0% 31%, 5% 30%, 10% 34%, 12% 38%, 19% 39%, 23% 32%, 28% 29%, 33% 28%, 38% 33%, 44% 37%, 48% 39%, 53% 37%, 59% 30%, 63% 32%, 68% 36%, 72% 43%, 76% 43%, 80% 41%, 85% 40%, 88% 38%, 93% 35%, 98% 37%, 100% 41%, 100% 71%, 97% 71%, 94% 68%, 90% 69%, 85% 74%, 81% 77%, 76% 79%, 75% 77%, 69% 74%, 66% 71%, 60% 70%, 54% 75%, 51% 80%, 47% 82%, 42% 79%, 39% 76%, 34% 72%, 31% 70%, 30% 65%, 24% 64%, 18% 69%, 13% 72%, 6% 74%, 2% 75%, 0% 76%);
+      border-radius: 5%;
+      width: 25vh;
+      height: 2vh;
+      background: linear-gradient(to right, map-get($colors, menu4p), map-get($colors, menu4s));
+      margin: 1.75vh 4vh 0vh 0vh;
+      display: inline-block;
+    }
+
+    &::after {
+      content: " ";
+      clip-path: polygon(0% 31%, 5% 30%, 10% 34%, 12% 38%, 19% 39%, 23% 32%, 28% 29%, 33% 28%, 38% 33%, 44% 37%, 48% 39%, 53% 37%, 59% 30%, 63% 32%, 68% 36%, 72% 43%, 76% 43%, 80% 41%, 85% 40%, 88% 38%, 93% 35%, 98% 37%, 100% 41%, 100% 71%, 97% 71%, 94% 68%, 90% 69%, 85% 74%, 81% 77%, 76% 79%, 75% 77%, 69% 74%, 66% 71%, 60% 70%, 54% 75%, 51% 80%, 47% 82%, 42% 79%, 39% 76%, 34% 72%, 31% 70%, 30% 65%, 24% 64%, 18% 69%, 13% 72%, 6% 74%, 2% 75%, 0% 76%);
+      border-radius: 5%;
+      transform: rotate(180deg);
+      width: 25vh;
+      height: 2vh;
+      background: linear-gradient(to right, map-get($colors, menu4p), map-get($colors, menu4s));
+      margin: 1.75vh 0vh 0vh 4vh;
+      display: inline-block;
+    }
+  }
+}

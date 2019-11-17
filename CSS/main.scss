@@ -1,3 +1,215 @@
-@import 'Libs/fonctions', 'Libs/variables', 'Libs/animations' ;
+@import 'Libs/mixins', 'Libs/variables', 'Libs/animations', 'Libs/normalize', 'Libs/menupages', 'Libs/mediaqueries';
 
+body {
+  font-family: "Gill Sans", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 90vh;
+}
+
+header {
+  background-color: map-get($colors, primary);
+  grid-column: 1/5;
+
+  img {
+    width: 50vh;
+    max-height: 10vh;
+  }
+
+  h1 {
+    margin-top: 0px;
+    padding: 2vh;
+    grid-column: 2/4;
+    width: 50vh;
+    margin: auto;
+  }
+}
+
+.menu1 {
+  grid-column: 1/2;
+  @include shadow;
+  background-color: map-get($colors, menu1);
+  margin: 7vh 0vh 2.5vh 7vh;
+  display: flex;
+
+  a {
+    @include menucards;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    font-size: $menufontsize;
+    line-height: $menufontsize;
+
+    h3 {
+      font-family: 'comic sans ms';
+      font-style: italic;
+      font-size: $menutitlesize;
+      line-height: $menutitlesize;
+    }
+
+    img {
+      max-width: 20%;
+    }
+  }
+}
+
+.menu2 {
+  grid-column: 2/3;
+  background-color: map-get($colors, menu2);
+  @include shadow;
+  margin: 7vh 2.5vh 2.5vh 5vh;
+
+  a {
+    @include menucards;
+    flex-direction: column;
+    text-decoration: none;
+
+    p {
+      background-image: linear-gradient(to right, map-get($colors, menu2p), map-get($colors, menu2s), map-get($colors, menu2t));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Cormorant Upright', serif;
+      font-size: $menufontsize;
+      line-height: $menufontsize;
+    }
+
+    h3 {
+      font-family: arial;
+      font-size: $menutitlesize;
+      line-height: $menutitlesize;
+      color: map-get($colors, menu2p);
+    }
+  }
+}
+
+.menu3 {
+  grid-column: 3/4;
+  @include shadow;
+  margin: 7vh 5vh 2.5vh 2.5vh;
+  background-color: map-get($colors, menu3);
+
+  a {
+    @include menucards;
+    flex-direction: column;
+    text-decoration: none;
+
+    p {
+      background-image: linear-gradient(to right, map-get($colors, menu3p), map-get($colors, menu3s));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Great Vibes', cursive;
+      font-size: $menufontsize;
+      line-height: $menufontsize;
+    }
+
+    h3 {
+      font-family: 'comic sans ms';
+      font-style: italic;
+      font-size: $menutitlesize;
+      line-height: $menutitlesize;
+      color: lighten(map-get($colors, menu3p), 30%);
+
+    }
+  }
+}
+
+.menu4 {
+  grid-column: 4/5;
+  @include shadow;
+  margin: 7vh 7vh 2.5vh 0vh;
+  background-color: map-get($colors, menu4);
+
+
+  a {
+    @include menucards;
+    flex-direction: column;
+    text-decoration: none;
+
+    p {
+      background-image: linear-gradient(to right, map-get($colors, menu4p), map-get($colors, menu4s));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Kaushan Script', cursive;
+      font-size: $menutitlesize;
+      line-height: $menutitlesize;
+    }
+
+    h3 {
+      font-family: 'comic sans ms';
+      font-style: italic;
+      font-size: $menutitlesize;
+      line-height: $menutitlesize;
+      color: lighten(map-get($colors, menu4p), 30%);
+    }
+  }
+}
+
+aside {
+  grid-column: 2/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .animsuspension {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($colors, primary);
+    color: map-get($colors, secondary);
+    height: 6vh;
+    width: 33vh;
+    margin: auto;
+    border-radius: 10px;
+
+    #btn {
+      text-align: center;
+      font-size: 1.5em;
+      margin: 1vh auto;
+    }
+
+    .suspension {
+      display: none;
+      height: 3vh;
+      width: 3vh;
+      border-radius: 100%;
+      margin: 2vh;
+      background-color: map-get($colors, secondary);
+    }
+  }
+}
+
+footer {
+  background-color: map-get($colors, primary);
+  position: fixed;
+  z-index: 2;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+
+  a {
+    color: map-get($colors, secondary);
+    text-decoration: none;
+    font-size: 1.7em;
+    margin: 1vh 2vh auto;
+    align-content: space-between;
+  }
+}
+
+#legalmentions {
+  margin-bottom: $footermargin;
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
 
