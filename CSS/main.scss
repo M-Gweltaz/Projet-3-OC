@@ -1,4 +1,4 @@
-@import 'Libs/mixins', 'Libs/variables', 'Libs/animations', 'Libs/normalize', 'Libs/menupages', 'Libs/mediaqueries';
+@import 'Libs/mediaqueries', 'Libs/mixins', 'Libs/variables', 'Libs/animations', 'Libs/normalize', 'Libs/menupages';
 
 body {
   font-family: "Gill Sans", sans-serif;
@@ -126,7 +126,6 @@ header {
   margin: 7vh 7vh 2.5vh 0vh;
   background-color: map-get($colors, menu4);
 
-
   a {
     @include menucards;
     flex-direction: column;
@@ -157,7 +156,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   .animsuspension {
     display: flex;
     justify-content: center;
@@ -211,5 +210,15 @@ footer {
   margin-bottom: $footermargin;
   margin-left: 5vh;
   margin-right: 5vh;
+}
+
+@media (max-width: 1300px) {
+
+  @include tabletteindex;
+}
+
+@media (max-width: 800px) {
+
+ @include phoneindex;
 }
 
