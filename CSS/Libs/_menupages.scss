@@ -11,6 +11,17 @@ h2 {
   margin-bottom: 13vh;
 }
 
+.menuprice {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    flex: 1;
+  }
+}
+
 //page1//
 
 .menupage1 {
@@ -24,7 +35,9 @@ h2 {
 
   .menuitem {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     width: 80%;
 
     p {
@@ -443,9 +456,9 @@ p.page2color3 {
 @media (max-width: 800px) {
 
   @include phonemenupage;
- }
+}
 
- @media (max-width: 600px) {
+@media (max-width: 600px) {
 
   @include miniphonemenupage;
- }
+}
